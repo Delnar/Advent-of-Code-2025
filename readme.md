@@ -26,3 +26,5 @@ We are organizing this repository by **User** first, then by **Day**. This ensur
   │   └── Day02
   │
   └── README.md
+
+  Do not include your daily input.  (.input files)

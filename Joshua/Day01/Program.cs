@@ -5,8 +5,8 @@ Console.WriteLine("Hello, World!");
 Console.WriteLine(50.rotate("L20"));
 
 int startingValue = 50;
-// string[] lines = File.ReadAllLines("sample.txt");
-string[] lines = File.ReadAllLines("data-01.txt");
+// string[] lines = File.ReadAllLines("sample.input");
+string[] lines = File.ReadAllLines("data-01.input");
 
 int hitZero = 0;
 
