@@ -1,0 +1,4 @@
+E:\projects\Advent\Advent-of-Code-2025\Joshua\Day01\obj\Debug\net9.0\Day01.GeneratedMSBuildEditorConfig.editorconfig
+E:\projects\Advent\Advent-of-Code-2025\Joshua\Day01\obj\Debug\net9.0\Day01.AssemblyInfoInputs.cache
+E:\projects\Advent\Advent-of-Code-2025\Joshua\Day01\obj\Debug\net9.0\Day01.AssemblyInfo.cs
+E:\projects\Advent\Advent-of-Code-2025\Joshua\Day01\obj\Debug\net9.0\Day01.csproj.CoreCompileInputs.cache
