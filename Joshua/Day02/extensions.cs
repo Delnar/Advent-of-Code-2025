@@ -3,6 +3,18 @@ static public class Day02Extensions
 {
     extension(string s)
     {
+
+        public List<string> SplitIntoChunks(int chunkSize)
+        {
+            if (chunkSize <= 0) throw new ArgumentOutOfRangeException(nameof(chunkSize));
+            var result = new List<string>();
+            for (int i = 0; i < s.Length; i += chunkSize)
+            {
+                int len = Math.Min(chunkSize, s.Length - i);
+                result.Add(s.Substring(i, len));
+            }
+            return result;
+        }        
         public List<string> SplitCSV()
         {
             return [.. s.Split(',')];
@@ -31,6 +43,36 @@ static public class Day02Extensions
         }
 
     }
+
+    extension(int n)
+	{
+        public List<int> GetFactors()
+        {
+            var result = new List<int>();
+            if (n == 0)            {
+                // All integers divide 0; return empty or 0-specific set.
+                // Here, return [0] to signal input special-case.
+                result.Add(0);
+                return result;
+            }
+            var absN = Math.Abs(n);
+            var small = new List<int>();
+            var large = new List<int>();
+            for (int i = 1; i * i <= absN; i++)
+            {
+                if (absN % i == 0) {
+                    small.Add(i);
+                    int other = absN / i;
+                    if (other != i) large.Add(other);
+                }
+            }
+            small.Sort();
+            large.Sort();
+            result.AddRange(small);
+            result.AddRange(large);
+            return result;
+        }		
+	}
 
     extension(List<string> lst)
     {
